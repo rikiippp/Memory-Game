@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- FAV-ICON -->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Memory Game</title>
+</head>
+
+<body>
+    <main>
+        <div class="marker">
+            <h1 id="successes" class="stats">Successes: 0</h1>
+            <h1 id="wait-time" class="stats">Time: </h1>
+            <h1 id="movements" class="stats">Movements: 0</h1>
+            <button id="startGame" class="start-button" onclick="initializeGame()">Start game</button>
+            <button class="reset-button" onclick="resetGame()">Reset game</button>
+        </div>
+        <div class="table">
+            <h1>Memory Game</h1>
+            <table>
+                <tr>
+                    <td><button id="card0" class="card" onclick="handleCardClick('card0')"></button></td>
+                    <td><button id="card1" class="card" onclick="handleCardClick('card1')"></button></td>
+                    <td><button id="card2" class="card" onclick="handleCardClick('card2')"></button></td>
+                    <td><button id="card3" class="card" onclick="handleCardClick('card3')"></button></td>
+                    <td><button id="card4" class="card" onclick="handleCardClick('card4')"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="card5" class="card" onclick="handleCardClick('card5')"></button></td>
+                    <td><button id="card6" class="card" onclick="handleCardClick('card6')"></button></td>
+                    <td><button id="card7" class="card" onclick="handleCardClick('card7')"></button></td>
+                    <td><button id="card8" class="card" onclick="handleCardClick('card8')"></button></td>
+                    <td><button id="card9" class="card" onclick="handleCardClick('card9')"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="card10" class="card" onclick="handleCardClick('card10')"></button></td>
+                    <td><button id="card11" class="card" onclick="handleCardClick('card11')"></button></td>
+                    <td><button id="card12" class="card" onclick="handleCardClick('card12')"></button></td>
+                    <td><button id="card13" class="card" onclick="handleCardClick('card13')"></button></td>
+                    <td><button id="card14" class="card" onclick="handleCardClick('card14')"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="card15" class="card" onclick="handleCardClick('card15')"></button></td>
+                    <td><button id="card16" class="card" onclick="handleCardClick('card16')"></button></td>
+                    <td><button id="card17" class="card" onclick="handleCardClick('card17')"></button></td>
+                    <td><button id="card18" class="card" onclick="handleCardClick('card18')"></button></td>
+                    <td><button id="card19" class="card" onclick="handleCardClick('card19')"></button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Juego creado por <span><a href="https://www.linkedin.com/in/ricarddop/" target="_blank">Ricardo Piñero</a></span></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
